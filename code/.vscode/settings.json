@@ -29,6 +29,6 @@
     "**/.vscode/**"
   ],
   "files.associations": {
-    "random": "cpp"
+    "iosfwd": "cpp"
   }
 }
