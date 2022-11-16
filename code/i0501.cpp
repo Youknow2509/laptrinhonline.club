@@ -1,4 +1,4 @@
-
+/* 
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -39,3 +39,34 @@ int main(){
 
     return 0;   
 }
+
+
+ */
+
+// code with map 
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+
+    map <int, string> mp;
+    map <int, string> :: iterator it;
+    int a ;
+    
+    mp.insert(pair<int, string>(61, "Brasilia"));
+    mp.insert(pair<int, string>(71, "Salvador"));
+    mp.insert(pair<int, string>(11, "Sao Paulo"));
+    mp.insert(pair<int, string>(21, "Rio de Janeiro"));
+    mp.insert(pair<int, string>(32, "Juiz de Fora"));
+    mp.insert(pair<int, string>(19, "Campinas"));
+    mp.insert(pair<int, string>(27, "Vitoria"));
+    mp.insert(pair<int, string>(31, "Belo Horizonte"));
+    cin >> a;
+    it = mp.find(a);
+    if (it == mp.end()) cout << "DDD nao cadastrado";
+    else cout << it->second;
+    return 0;
+}
+
