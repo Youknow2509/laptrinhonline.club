@@ -9,7 +9,7 @@ using namespace std;
     // k = 2
 int main(){
  
-    int n, x, sum = 0 ;
+    int n, x, sum = 0, d = 0;
     cin >> n >> x;
     int a[n];
 
@@ -17,7 +17,7 @@ int main(){
         cin >> a[i];
         sum += a[i];
     }
-    int d = 0,  k = n;
+    int k = n;
 
     sort(a, a + n, greater<int>());
 
@@ -30,3 +30,4 @@ int main(){
     }
     cout << k << " " << sum; 
     return 0;
+}
